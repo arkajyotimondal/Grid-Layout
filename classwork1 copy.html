@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+<style>
+  .container {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    height: 1000px;
+    column-gap: 50px;
+    border: 7px solid orange;
+    padding: 30px;
+    background-color: antiquewhite;
+    margin: auto;
+  }
+
+  .header {
+    grid-column: 1 / 4;
+    background-color: aquamarine;
+     border: 3px solid black;
+  }
+
+  .box1 {
+    background-color: chocolate;
+    border: 3px solid black;
+  }
+
+  .middle1 {
+    background-color: cadetblue;
+    border: 3px solid black;
+  }
+
+  .middle2 {
+    background-color: red;
+    border: 3px solid black;
+  }
+
+  .right {
+    background-color: yellow;
+    border: 3px solid black;
+  }
+
+  .middle {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header"></div>
+  <div class="box1"></div>
+  <div class="middle">
+    <div class="middle1"></div>
+    <div class="middle2"></div>
+  </div>
+  <div class="right"></div>
+</div>
+
+</body>
+</html>
